@@ -1,0 +1,47 @@
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <style>
+            html, body {
+                height: 200px;
+                width: 400px;
+            }
+
+            .hidden {
+                display: none;
+            }
+
+            .flex {
+                display: flex;
+            }
+        </style>
+    </head>
+
+    <body>
+        <button type="button" id="importButton">Importar Dados</button>
+        <button type="button" id="fillformButton" class="hidden">Preencher Formulário</button>
+
+        <div id="importWindow">
+            <textarea id="importText" rows="10" cols="30"></textarea>
+            <button type="button" id="importSave">Guardar</button>
+        </div>
+
+        <div id="fillformWindow" class="hidden">
+            <h3 class="flex">Fatura <form id="currentFaturaForm"><input type="number" id="currentFatura"/></span> de <span id="totalFaturas">1</span></h3>
+            <div>
+                <button type="button" id="backButton">« Retroceder</button>
+                <button type="button" id="skipButton">Avançar »</button>
+            </div>
+            <div>
+                <button type="button" id="fillButton">Preencher</button>
+                <button type="button" id="submitButton">Submeter</button>
+            </div>
+            
+        </div>
+
+        <script src="action.js"></script>
+
+    </body>
+
+</html>
