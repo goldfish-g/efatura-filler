@@ -63,7 +63,7 @@ function main(workbook: ExcelScript.Workbook): Fatura[] {
   return faturaArray;
 }
 
-const zeroPad = (num, places) => String(num).padStart(places, '0')
+const zeroPad = (num: number, places: number) => String(num).padStart(places, '0')
 
 const formatDate = (serial: string): string => {
   var utc_days = Math.floor(+serial - 25569);
